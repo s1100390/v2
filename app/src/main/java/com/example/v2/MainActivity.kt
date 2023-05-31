@@ -34,12 +34,19 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
-    Text(text = "作者：資管二B 江祐丞")
-    Image(
-        painterResource(id = R.drawable.map),
-        contentDescription ="Cart button icon",
-        modifier = Modifier.size(20.dp))
+    Column() {
+        Text(text = "作者：資管二B 江祐丞")
+        Image(
+            painterResource(id = R.drawable.map),
+            contentDescription ="Cart button icon",
+            //modifier = Modifier.size(20.dp)
+    )
+    }
 }
+
+
+
+
 
 
 //@Preview(showBackground = true)
